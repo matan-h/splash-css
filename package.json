@@ -1,0 +1,15 @@
+{
+  "name": "splash",
+  "version": "1.0.0",
+  "description": "splash colors implementation as one css file",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass --no-source-map main.scss dist/styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.83.0"
+  }
+}

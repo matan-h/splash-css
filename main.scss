@@ -1,0 +1,15 @@
+@function splash($r, $g, $b) {
+    @return rgb($r * 28.34, $g * 28.34, $b * 28.34);
+  }
+  
+  :root { // Only one :root rule now
+    @for $r from 0 through 9 {
+      @for $g from 0 through 9 {
+        @for $b from 0 through 9 {
+          $sp-name: sp#{$r}#{$g}#{$b};
+          --#{$sp-name}: #{splash($r, $g, $b)};
+        }
+      }
+    }
+  }
+  
