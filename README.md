@@ -20,13 +20,13 @@ Unfortunately, normal CSS do not support this at all, not even the concept of cu
 There are two ways to use this repo:
 
 1.  **Using the CSS file directly:**
-    Include the compiled CSS file from github in your HTML:
+    Include the 103 lines compiled CSS file from github in your HTML:
     ```html
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/matan-h/splash-css@master/dist/styles.css">
     ```
     You can now use it in your CSS like `var(--sp555)` for gray.
 2.  **Compiling with pnpm:**
     -   Clone the repository.
-    -   Run `pnpm install` to install the dependencies.
+    -   Run `pnpm install` to install the scss compiler.
     -   Run `pnpm build` to compile the SCSS into CSS.
     -   Use the generated `dist/styles.css` file in your project.
