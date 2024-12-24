@@ -14,10 +14,9 @@ Here is a simple implementation in Scss:
   // color: splash(5,5,5) -> gray
 ```
 
-Unfortunately, normal CSS does not support this at all, not even the concept of custom color spaces. So, this repo provides an alternative way: `--spRGB`. For example, `--sp555` would be gray.
+Unfortunately, normal CSS do not support this at all, not even the concept of custom color spaces. So, this repo provides an alternative way: `var(--spRGB)`. For example, `var(--sp555)` would be gray.
 
 ## Getting Started
-
 There are two ways to use this repo:
 
 1.  **Using the CSS file directly:**
@@ -25,7 +24,7 @@ There are two ways to use this repo:
     ```html
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/matan-h/splash-css@master/dist/styles.css">
     ```
-    You can now use it in your CSS like `--sp555` for gray.
+    You can now use it in your CSS like `var(--sp555)` for gray.
 2.  **Compiling with pnpm:**
     -   Clone the repository.
     -   Run `pnpm install` to install the dependencies.
